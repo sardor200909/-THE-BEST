@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-color: #fff;
+  --black-color: #22343D;
+}
+
+body.dark-mode {
+  --white-color: #22343D;
+  --black-color: #fff;
+}
+
+body {
+  background: var(--white-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 145px;
+}
+
+#dark-toggle {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: linear-gradient(179.59deg, #EDEDED 0.35%, rgba(255, 255, 255, 0.0001) 99.63%);
+}
+
+header nav .navigation {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .navigation .logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+header nav .navigation .logo h3 {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 28px;
+}
+header nav .navigation2 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+header nav .navigation2 .navbar {
+  display: flex;
+  gap: 25px;
+}
+header nav .navigation2 .navbar li a {
+  color: var(--black-color);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+header nav .navigation2 .navbar li a:active {
+  font-weight: 600;
+}
+header nav .navigation2 .navbar li a:active {
+  font-weight: 600;
+}
+header nav .navigation2 .nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+header nav .navigation2 .nav-btn .signIn {
+  padding: 10px 22px;
+  border-radius: 10px;
+  border: 1px solid #BCD0E5;
+  color: var(--black-color);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+header nav .navigation2 .nav-btn .signUp {
+  padding: 10px 22px;
+  border-radius: 10px;
+  background: #02897A;
+  color: var(--white-color);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+header nav .navigation2 .menu-btn {
+  display: none;
+}
+
+main .section-price {
+  padding: 50px 0 150px;
+}
+main .section-price .price h2 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black-color);
+}
+main .section-price .price h1 {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  color: var(--black-color);
+  margin: 32px 0 16px;
+}
+main .section-price .price p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  margin: 0px 0 50px;
+}
+main .section-price .price p:active {
+  font-weight: 600;
+}
+main .section-price .price .tables {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 70px;
+}
+main .section-price .price .tables .table {
+  padding: 24px 72px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 10px;
+}
+main .section-price .price .tables .table h2 {
+  color: var(--black-color);
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+main .section-price .price .tables .table p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  color: var(--black-color);
+  margin-bottom: 16px;
+}
+main .section-price .price .tables .table .cost {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+main .section-price .price .tables .table .cost h1 {
+  font-family: Poppins;
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 0.200000003px;
+  text-align: center;
+  color: #02897A;
+}
+main .section-price .price .tables .table .cost .monthly h2 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.1000000015px;
+  text-align: left;
+  color: #02897A;
+}
+main .section-price .price .tables .table .cost .monthly span {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.1000000015px;
+  text-align: left;
+  color: #AFAFAF;
+}
+main .section-price .price .tables .table h3 {
+  color: var(--black-color);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.200000003px;
+  text-align: center;
+}
+main .section-price .price .tables .table .for-m {
+  padding: 16px 0;
+}
+main .section-price .price .tables .table .pricing-btn {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+}
+main .section-price .price .tables .table .pricing-btn button {
+  padding: 11px 19px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.94px;
+  text-align: center;
+  background: #02897A;
+  border-radius: 10px;
+  border: none;
+  color: var(--white-color);
+}
+main .section-price .price .tables .table2 {
+  background: #02897A;
+  padding: 24px 72px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 10px;
+}
+main .section-price .price .tables .table2 h2 {
+  color: var(--white-color);
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+main .section-price .price .tables .table2 p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  color: var(--white-color);
+  margin-bottom: 16px;
+}
+main .section-price .price .tables .table2 .cost {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+main .section-price .price .tables .table2 .cost h1 {
+  font-family: Poppins;
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 0.200000003px;
+  text-align: center;
+  color: var(--white-color);
+}
+main .section-price .price .tables .table2 .cost .monthly h2 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.1000000015px;
+  text-align: left;
+  color: var(--white-color);
+}
+main .section-price .price .tables .table2 .cost .monthly span {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.1000000015px;
+  text-align: left;
+  color: #AFAFAF;
+}
+main .section-price .price .tables .table2 h3 {
+  color: var(--white-color);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.200000003px;
+  text-align: center;
+}
+main .section-price .price .tables .table2 .for-m {
+  padding: 16px 0;
+}
+main .section-price .price .tables .table2 .pricing-btn {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+}
+main .section-price .price .tables .table2 .pricing-btn button {
+  padding: 11px 19px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.94px;
+  text-align: center;
+  background: var(--white-color);
+  border-radius: 10px;
+  border: none;
+  color: var(--black-color);
+}
+main .section-visit {
+  padding: 0 0 150px;
+}
+main .section-visit .visit {
+  margin: 0 auto;
+  width: 1000px;
+  background: #02897A;
+  border-radius: 32px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .section-visit .visit li h1 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48.45px;
+  text-align: left;
+  color: var(--white-color);
+}
+main .section-visit .visit li button {
+  margin: 50px 0 0;
+  padding: 10px 33px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: #02897A;
+}
+
+footer {
+  padding: 0 0 50px;
+}
+footer .the-end {
+  text-align: center;
+  color: var(--white-color);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 10px;
+}
+footer .foot {
+  display: flex;
+  align-items: stretch;
+  gap: 70px;
+  justify-content: space-between;
+}
+footer .foot .foot-logo .logo-1 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+footer .foot .foot-logo .logo-1 h1 {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 28px;
+  color: var(--black-color);
+}
+footer .foot .foot-logo .sm {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 25px;
+}
+footer .foot .resource h3,
+footer .foot .stuff h3 {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: var(--black-color);
+  margin-bottom: 5px;
+}
+footer .foot .resource li a,
+footer .foot .stuff li a {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  color: var(--black-color);
+}
+footer .foot .foot-end p {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: var(--black-color);
+}
+footer .foot .foot-end form input {
+  margin: 34px 0 21px;
+  width: 325px;
+  height: 48px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2509803922);
+}
+footer .foot .foot-end form button {
+  padding: 8px 15px;
+  color: var(--white-color);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  background: #02897A;
+  border: none;
+  border-radius: 8px;
+}
+
+@media (max-width: 411px) {
+  .container {
+    max-width: 411px;
+    padding: 0 31px;
+  }
+}
+
+/*# sourceMappingURL=pricing.css.map */
